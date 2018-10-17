@@ -13,16 +13,16 @@
         android:theme="@style/AppTheme"
         android:name=".util.AppController">
         <activity android:name=".ui.main.MainActivity">
-
-        </activity>
-        <activity android:name=".ui.simpsons.simpsonmain.SimpsonsActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.simpsons.character.CharacterActivity"></activity>
+        <activity android:name=".ui.simpsonsvolley.SimpsonsActivity" >
+
+        </activity>
+        <activity android:name=".ui.character.CharacterActivity"></activity>
     </application>
 
 </manifest>

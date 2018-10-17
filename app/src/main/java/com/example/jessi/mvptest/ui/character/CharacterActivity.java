@@ -1,4 +1,4 @@
-package com.example.jessi.mvptest.ui.simpsons.character;
+package com.example.jessi.mvptest.ui.character;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

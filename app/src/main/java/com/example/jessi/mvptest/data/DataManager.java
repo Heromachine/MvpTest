@@ -14,18 +14,31 @@ public class DataManager implements IDataManager {
     @Override
     public void createRow(String string) {
         idbHelper.createRow(string);
-
     }
 
     @Override
     public void readRow(OnResponseListener listener) {
-
         idbHelper.readRow(listener);
     }
 
     @Override
     public void volleyCall(OnResponseListener listener, String url) {
         idbHelper.volleyCall(listener, url);
+    }
+
+    @Override
+    public void retrofitCall(OnResponseListener listener, String url) {
+        idbHelper.retrofitCall(listener, url);
+    }
+
+    @Override
+    public void getAllVolleyCharacters(OnResponseListener onResponseListener) {
+
+    }
+
+    @Override
+    public void getAllRetrofitCharacters(OnResponseListener onResponseListener) {
+
     }
 
     @Override
@@ -43,8 +56,4 @@ public class DataManager implements IDataManager {
 
     }
 
-    @Override
-    public void getAllCharacters(OnResponseListener onResponseListener) {
-
-    }
 }

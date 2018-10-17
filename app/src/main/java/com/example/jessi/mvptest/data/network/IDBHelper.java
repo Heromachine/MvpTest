@@ -7,6 +7,7 @@ public interface IDBHelper {
     void createRow(String string);
     void readRow(IDataManager.OnResponseListener listener);
     void volleyCall(IDataManager.OnResponseListener listener, String url);
+    void retrofitCall(IDataManager.OnResponseListener listener, String url);
     void updateRow();
     void deleteRow();
 }

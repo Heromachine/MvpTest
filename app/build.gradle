@@ -20,6 +20,22 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "flavorDimen"
+    productFlavors{
+        retrofit{
+            dimension "flavorDimen"
+            applicationId "com.example.jessi.simpsonsproject.retrofitflavor"
+            versionName "retrofit"
+
+        }
+        volley{
+            dimension "flavorDimen"
+            applicationId "com.example.jessi.simpsonsproject.volleyflavor"
+            versionName "volley"
+
+        }
+    }
 }
 
 dependencies {
