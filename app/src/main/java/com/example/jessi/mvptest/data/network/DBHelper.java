@@ -115,10 +115,8 @@ public class DBHelper implements IDBHelper{
             @Override
             public void onFailure(Call<Simpsons> call, Throwable t) {
                 Log.d(TAG, "onFailure: " + t.getMessage());
-
             }
         });
-
     }
 
     @Override
