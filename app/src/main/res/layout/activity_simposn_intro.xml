@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d7d5d5"
     tools:context=".ui.main.MainActivity"
-    android:background="#d7d5d5">
+    tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
-        android:layout_width="162dp"
-        android:layout_height="283dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
 
+        android:layout_height="283dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="52dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="176dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -37,11 +43,15 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="160dp"
-        android:layout_height="280dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="179dp">
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
 
         <ImageView
             android:id="@+id/imageView"
@@ -60,8 +70,6 @@
             tools:layout_editor_absoluteX="20dp"
             tools:layout_editor_absoluteY="327dp" />
     </LinearLayout>
-
-
 
 
 </android.support.constraint.ConstraintLayout>
